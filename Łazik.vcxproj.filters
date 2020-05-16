@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Renderable">
+      <UniqueIdentifier>{5eb63a40-8a87-431e-8a6b-7acb6320d717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderable\Models">
+      <UniqueIdentifier>{c5c67371-068c-41a6-9834-0377f38f25d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable">
+      <UniqueIdentifier>{6ffbf546-1923-4572-964f-ab3cd42dd43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable\Models">
+      <UniqueIdentifier>{fffe5405-a4c0-439e-91c7-5ef4a93062bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable\Models\Rover">
+      <UniqueIdentifier>{f56e1c4c-420d-4654-894d-f2fe99883bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderable\Models\Rover">
+      <UniqueIdentifier>{1545836b-1f14-4a0a-954b-47d647b60dcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable\Models\Ground">
+      <UniqueIdentifier>{90c65805-58d5-41a7-9de6-0f16e49a1adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderable\Models\Ground">
+      <UniqueIdentifier>{da5945b5-f327-45fe-b585-2f0cdf347f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderable\Models\Column">
+      <UniqueIdentifier>{c86299e3-c051-4cd3-ad61-e76394d24da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderable\Models\Column">
+      <UniqueIdentifier>{1a391b48-29d7-4578-90c9-e2e2b9a75af1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\IRenderable.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\MainScene.h">
+      <Filter>Header Files\Renderable\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Positionable.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Rover\Wheel.h">
+      <Filter>Header Files\Renderable\Models\Rover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Rover\WheelAxis.h">
+      <Filter>Header Files\Renderable\Models\Rover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Rover\Rover.h">
+      <Filter>Header Files\Renderable\Models\Rover</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Sizable.h">
+      <Filter>Header Files\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Ground\Ground.h">
+      <Filter>Header Files\Renderable\Models\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Ground\PerlinNoise.h">
+      <Filter>Header Files\Renderable\Models\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Column\Column.h">
+      <Filter>Header Files\Renderable\Models\Column</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable\Models\Cuboid.h">
+      <Filter>Header Files\Renderable\Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\MainScene.cpp">
+      <Filter>Source Files\Renderable\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Rover\Wheel.cpp">
+      <Filter>Source Files\Renderable\Models\Rover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Rover\WheelAxis.cpp">
+      <Filter>Source Files\Renderable\Models\Rover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Rover\Rover.cpp">
+      <Filter>Source Files\Renderable\Models\Rover</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Ground\Ground.cpp">
+      <Filter>Source Files\Renderable\Models\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Column\Column.cpp">
+      <Filter>Source Files\Renderable\Models\Column</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderable\Models\Cuboid.cpp">
+      <Filter>Source Files\Renderable\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
