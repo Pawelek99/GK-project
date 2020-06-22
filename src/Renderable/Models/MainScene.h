@@ -17,4 +17,12 @@ private:
 	Ground ground;
 	Column columns[4];
 	Cuboid cuboid;
+
+	float pos[3];
+	float speed = 0.0f;
+	float force = 1;
+	float friction = 0.9f;
+	float rotation = 0;
+	short verticalDirection = 0;
+	short horizontalDirection = 0;
 };

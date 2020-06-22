@@ -13,9 +13,11 @@ public:
 	void renderSpoiler();
 	void renderCabin();
 	void renderExhaustPipe();
+	void setRotation(float angle);
 
 private:
 	const float PI = 3.14f;
+	float angle = 0;
 	WheelAxis wheelAxis[2];
 	Wheel wheels[4];
 };

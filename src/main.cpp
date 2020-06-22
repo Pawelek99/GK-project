@@ -136,6 +136,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 		SwapBuffers(hDC);
 		ValidateRect(hWnd, NULL);
 		break;
+	case WM_TIMER:
+		render();
+		SwapBuffers(hDC);
+		ValidateRect(hWnd, NULL);
+		break;
 	case WM_KEYDOWN:
 		switch (wParam) {
 		case VK_UP:
@@ -201,6 +206,9 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	ShowWindow(hWnd, SW_SHOW);
 	UpdateWindow(hWnd);
+
+	const WORD ID_TIMER = 1;
+	SetTimer(hWnd, ID_TIMER, 100, NULL);
 
 	while (GetMessage(&msg, NULL, 0, 0)) {
 		TranslateMessage(&msg);

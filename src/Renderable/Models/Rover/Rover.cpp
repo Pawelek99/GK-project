@@ -305,8 +305,24 @@ void Rover::render() {
 	this->wheelAxis[0].render();
 	this->wheelAxis[1].render();
 
+	glPushMatrix();
+	glTranslatef(this->x - this->width * 0.5f, this->y, this->z + this->height * 0.5f);
+	glRotatef(this->angle * 20, 0, 1, 0);
+	glTranslatef(-(this->x - this->width * 0.5f), -this->y, -(this->z + this->height * 0.5f));
+
 	this->wheels[0].render();
+
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(this->x + this->width * 0.5f, this->y, this->z + this->height * 0.5f);
+	glRotatef(this->angle * 20, 0, 1, 0);
+	glTranslatef(-(this->x + this->width * 0.5f), -this->y, -(this->z + this->height * 0.5f));
+	
 	this->wheels[1].render();
+
+	glPopMatrix();
+
 	this->wheels[2].render();
 	this->wheels[3].render();
 
@@ -314,4 +330,8 @@ void Rover::render() {
 	renderSpoiler();
 	renderCabin();
 	renderExhaustPipe();
+}
+
+void Rover::setRotation(float angle) {
+	this->angle = angle;
 }
